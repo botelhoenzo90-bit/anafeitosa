@@ -21,13 +21,13 @@ export const Route = createFileRoute("/")({
 const whatsapp = "https://wa.me/5524993272763?text=Ol%C3%A1%20Ana%2C%20gostaria%20de%20agendar%20uma%20conversa.";
 
 const services = [
-  ["Psicanálise", "Um espaço de escuta para compreender sua história, emoções e padrões."],
-  ["Terapia", "Acompanhamento individual para atravessar momentos difíceis com mais clareza."],
-  ["Ansiedade", "Acolhimento para pensamentos acelerados, sobrecarga e preocupações."],
-  ["Naturopatia", "Um olhar integrativo para hábitos, rotina e bem-estar."],
-  ["Adolescentes", "Escuta acolhedora para mudanças, inseguranças e desafios da adolescência."],
-  ["Adultos", "Um espaço para se compreender melhor e cuidar do que pede atenção."],
-  ["Casais", "Um espaço para diálogo, vínculos, conflitos e novas formas de se relacionar."],
+  ["Psicanálise", "Compreender além do que se diz, olhando para histórias, emoções e processos que atravessam você."],
+  ["Terapia", "Um espaço de escuta qualificada para elaborar sentimentos, conflitos e momentos de mudança."],
+  ["Ansiedade", "Acolher o sofrimento e buscar novos sentidos para aquilo que hoje parece difícil de organizar."],
+  ["Naturopatia", "Um olhar complementar para hábitos, rotina e cuidado integral, respeitando cada pessoa."],
+  ["Adolescentes", "Um espaço seguro para falar sobre mudanças, inseguranças, relações e descobertas."],
+  ["Adultos", "Um espaço para compreender padrões, escolhas, relações e aquilo que pede atenção."],
+  ["Casais", "Escuta para vínculos, conflitos, comunicação e diferentes formas de construir a relação."],
 ];
 
 const moments = [
@@ -59,7 +59,7 @@ function Index() {
           <div className="hero-signature"><strong>ANA FEITOSA</strong><span>PSICANALISTA · TERAPEUTA · NATUROPATA</span></div><div className="eyebrow"><span /> CUIDADO EMOCIONAL · ATENDIMENTO ONLINE</div>
           <h1>Um espaço para você <em>se ouvir</em> com mais calma.</h1>
           <p>Psicanálise, terapia e naturopatia com uma abordagem acolhedora para adultos, adolescentes e casais.</p>
-          <BookingButton>Agendar minha conversa</BookingButton>
+          <BookingButton>Agende sua sessão de psicanálise</BookingButton>
           <div className="trust-row"><span><Check /> Escuta acolhedora</span><span><Check /> Atendimento online</span><span><Check /> Cuidado individual</span></div>
         </div>
       </section>
@@ -75,9 +75,9 @@ function Index() {
           <p>Às vezes, começar é apenas encontrar um lugar seguro para colocar em palavras aquilo que vem pesando.</p>
         </div>
         <div className="welcome-grid">
-          {["Escuta sem julgamentos", "Respeito pela sua história", "Atendimento individual", "Espaço reservado"].map((item) => <div className="soft-pill" key={item}><Heart size={20} />{item}</div>)}
+          {["Compreender além do que se diz", "Acolher sua história", "Dar sentido ao sofrimento", "Ampliar possibilidades"].map((item) => <div className="soft-pill" key={item}><Heart size={20} />{item}</div>)}
         </div>
-        <BookingButton>Quero conversar com a Ana</BookingButton>
+        <BookingButton>Agende sua sessão</BookingButton>
       </section>
 
       <section id="atendimentos" className="services section">
@@ -92,7 +92,7 @@ function Index() {
               <div className="card-number">{number}</div><div className="service-icon"><Sparkles size={25} /></div><h3>{title}</h3><p>{desc}</p>
             </article>)}
           </div>
-        </div><div className="services-cta"><BookingButton>Quero saber qual atendimento combina comigo</BookingButton></div>
+        </div><div className="services-cta"><BookingButton>Agende sua sessão de psicanálise</BookingButton></div>
       </section>
 
       <section id="sobre" className="about section">
@@ -105,10 +105,10 @@ function Index() {
           <div className="about-image-wrap about-image-mobile">
             <img src={anaFeitosaAsset.url} alt="Ana Feitosa, psicanalista, terapeuta e naturopata" />
           </div>
-          <p>Meu trabalho parte da escuta e do respeito pela história de cada pessoa. Não existe um roteiro pronto para aquilo que você vive.</p>
-          <p>Como <strong>psicanalista, terapeuta e naturopata</strong>, ofereço um espaço de acolhimento para adultos, adolescentes e casais, com atendimento online e olhar individualizado.</p>
-          <div className="check-list clean-checks"><span><Check /> <b>Escuta sem julgamentos</b></span><span><Check /> <b>Atendimento individual</b></span><span><Check /> <b>Adultos, adolescentes e casais</b></span><span><Check /> <b>Formato online</b></span></div>
-          <BookingButton>Agendar atendimento</BookingButton>
+          <p>Meu trabalho parte da escuta qualificada e do respeito pela história de cada pessoa. Não existe um roteiro pronto para aquilo que você vive: cada história merece ser compreendida em sua singularidade.</p>
+          <p>Como <strong>psicanalista, terapeuta e naturopata</strong>, ofereço um espaço de acolhimento para adultos, adolescentes e casais, com atendimento online e olhar individualizado — respeitando o tempo psíquico de cada pessoa.</p>
+          <div className="check-list clean-checks"><span><Check /> <b>Escuta sem julgamentos</b></span><span><Check /> <b>Escuta qualificada</b></span><span><Check /> <b>Respeito ao tempo de cada história</b></span><span><Check /> <b>Atendimento online</b></span></div>
+          <BookingButton>Agende sua sessão</BookingButton>
         </div>
       </section>
 
@@ -139,7 +139,7 @@ function Index() {
               ["04", "Continuidade", "Um espaço de escuta para perceber mudanças e construir novos caminhos."]
             ].map(([n, title, desc]) => <article className="process-card" key={n}><span className="process-number">{n}</span><div><h3>{title}</h3><p>{desc}</p></div></article>)}
           </div>
-          <BookingButton>Agendar primeira conversa</BookingButton>
+          <BookingButton>Agende sua sessão de psicanálise</BookingButton>
         </div>
       </section>
 
@@ -149,7 +149,7 @@ function Index() {
           <h2>Seu cuidado pode acontecer de onde <em>você estiver.</em></h2>
           <p>Tenha um espaço reservado na sua rotina para olhar para si, sem precisar se deslocar. Escolha um lugar tranquilo e esteja presente para o seu processo.</p>
           <div className="online-points"><span><Check /> Mais praticidade</span><span><Check /> Horário combinado</span><span><Check /> Ambiente reservado</span></div>
-          <BookingButton>Ver disponibilidade</BookingButton>
+          <BookingButton>Agende sua sessão</BookingButton>
         </div>
       </section>
 
@@ -173,13 +173,13 @@ function Index() {
       </section>
 
       <section className="final-cta">
-        <div className="kicker">Seu próximo passo</div><h2>Você pode começar com uma <em>conversa.</em></h2><p>Não precisa ter tudo resolvido. Basta dar espaço para o que você está sentindo.</p><BookingButton>Agendar atendimento pelo WhatsApp</BookingButton>
+        <div className="kicker">Seu próximo passo</div><h2>Você pode começar com uma <em>conversa.</em></h2><p>Não precisa ter tudo resolvido. Basta dar espaço para o que você está sentindo.</p><BookingButton>Agende sua sessão de psicanálise</BookingButton>
       </section>
 
       <footer>
         <div className="footer-brand"><a className="brand" href="#inicio"><strong>ANA</strong> FEITOSA <small>PSICANALISTA · TERAPEUTA · NATUROPATA</small></a><p>Escuta, cuidado e presença.</p></div>
         <div className="footer-links"><strong>Navegação</strong><a href="#sobre">Quem é Ana</a><a href="#atendimentos">Atendimentos</a><a href="#processo">Como funciona</a><a href="#faq">Dúvidas</a></div>
-        <div className="footer-contact"><strong>Agendamentos</strong><a href={whatsapp} target="_blank" rel="noreferrer">+55 24 99327-2763</a><a className="footer-cta" href={whatsapp} target="_blank" rel="noreferrer">Agendar agora <ArrowUpRight size={15} /></a></div>
+        <div className="footer-contact"><strong>Agendamentos</strong><a href={whatsapp} target="_blank" rel="noreferrer">+55 24 99327-2763</a><a className="footer-cta" href={whatsapp} target="_blank" rel="noreferrer">Agende sua sessão <ArrowUpRight size={15} /></a></div>
         <div className="footer-bottom">© {new Date().getFullYear()} Ana Feitosa · Atendimento online</div>
       </footer>
       <a className="floating-whatsapp" href={whatsapp} target="_blank" rel="noreferrer" aria-label="Conversar com Ana pelo WhatsApp"><img src={whatsappAsset.url} alt="" /></a>
