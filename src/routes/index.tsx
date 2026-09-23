@@ -7,13 +7,13 @@ export const Route = createFileRoute("/")({ component: Index });
 const whatsapp = "https://wa.me/5524993272763?text=Ol%C3%A1%20Ana%2C%20gostaria%20de%20agendar%20uma%20conversa.";
 
 const services = [
-  ["Psicanálise", "Um espaço de escuta para compreender sua história, emoções e padrões.", "01"],
-  ["Terapia", "Acompanhamento individual para atravessar momentos difíceis com mais clareza.", "02"],
-  ["Ansiedade", "Acolhimento para pensamentos acelerados, sobrecarga e preocupações.", "03"],
-  ["Naturopatia", "Um olhar integrativo para hábitos, rotina e bem-estar.", "04"],
-  ["Adolescentes", "Escuta acolhedora para mudanças, inseguranças e desafios da adolescência.", "05"],
-  ["Adultos", "Um espaço para se compreender melhor e cuidar do que pede atenção.", "06"],
-  ["Casais", "Um espaço para diálogo, vínculos, conflitos e novas formas de se relacionar.", "07"],
+  ["Psicanálise", "Um espaço de escuta para compreender sua história, emoções e padrões."],
+  ["Terapia", "Acompanhamento individual para atravessar momentos difíceis com mais clareza."],
+  ["Ansiedade", "Acolhimento para pensamentos acelerados, sobrecarga e preocupações."],
+  ["Naturopatia", "Um olhar integrativo para hábitos, rotina e bem-estar."],
+  ["Adolescentes", "Escuta acolhedora para mudanças, inseguranças e desafios da adolescência."],
+  ["Adultos", "Um espaço para se compreender melhor e cuidar do que pede atenção."],
+  ["Casais", "Um espaço para diálogo, vínculos, conflitos e novas formas de se relacionar."],
 ];
 
 const moments = [
@@ -137,11 +137,11 @@ function Index() {
         <div className="section-heading center">
           <div className="kicker">Depoimentos</div>
           <h2>Um espaço para se sentir <em>acolhido.</em></h2>
-          <p>Depoimentos apresentados em um carrossel contínuo.</p>
+          <p>Experiências compartilhadas por quem encontrou um espaço de escuta e acolhimento.</p>
         </div>
         <div className="reviews-marquee">
           <div className="reviews-track">
-            {[["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]].concat([["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]]).map(([initial, name, text], i) => <article className="google-card" key={i}><div className="google-top"><span className="avatar">{initial}</span><div><strong>{name}</strong><small>Depoimento autorizado</small></div></div><div className="stars">{[1,2,3,4,5].map((x) => <Star key={x} fill="currentColor" size={17} />)}</div><p>{text}</p><small className="review-note">Depoimento autorizado</small></article>)}
+            {[["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]].concat([["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]]).map(([initial, name, text], i) => <article className="google-card" key={i}><div className="google-top"><span className="avatar">{initial}</span><div><strong>{name}</strong></div></div><div className="stars">{[1,2,3,4,5].map((x) => <Star key={x} fill="currentColor" size={17} />)}</div><p>{text}</p></article>)}
           </div>
         </div>
         <BookingButton>Agendar atendimento</BookingButton>
