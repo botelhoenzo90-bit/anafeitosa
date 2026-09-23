@@ -73,11 +73,11 @@ function Index() {
           <div className="kicker">Um primeiro passo</div>
           <h2>Você não precisa ter tudo <em>resolvido.</em></h2>
           <p>Às vezes, começar é apenas encontrar um lugar seguro para colocar em palavras aquilo que vem pesando.</p>
-          <BookingButton>Quero conversar com a Ana</BookingButton>
         </div>
         <div className="welcome-grid">
           {["Escuta sem julgamentos", "Respeito pela sua história", "Atendimento individual", "Espaço reservado"].map((item) => <div className="soft-pill" key={item}><Heart size={20} />{item}</div>)}
         </div>
+        <BookingButton>Quero conversar com a Ana</BookingButton>
       </section>
 
       <section id="atendimentos" className="services section">
@@ -96,12 +96,12 @@ function Index() {
       </section>
 
       <section id="sobre" className="about section">
-        <div className="about-image-wrap">
-          <img src={anaFeitosaAsset.url} alt="Ana Feitosa, psicanalista, terapeuta e naturopata" />
-        </div>
         <div className="section-copy">
           <div className="kicker">Quem é Ana Feitosa</div>
           <h2>Cuidar da mente também é aprender a <em>se tratar com gentileza.</em></h2>
+          <div className="about-image-wrap">
+            <img src={anaFeitosaAsset.url} alt="Ana Feitosa, psicanalista, terapeuta e naturopata" />
+          </div>
           <p>Meu trabalho parte da escuta e do respeito pela história de cada pessoa. Não existe um roteiro pronto para aquilo que você vive.</p>
           <p>Como <strong>psicanalista, terapeuta e naturopata</strong>, ofereço um espaço de acolhimento para adultos, adolescentes e casais, com atendimento online e olhar individualizado.</p>
           <div className="check-list clean-checks"><span><Check /> <b>Escuta sem julgamentos</b></span><span><Check /> <b>Atendimento individual</b></span><span><Check /> <b>Adultos, adolescentes e casais</b></span><span><Check /> <b>Formato online</b></span></div>
