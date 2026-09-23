@@ -80,6 +80,31 @@ function Index() {
         <BookingButton>Agende sua sessão</BookingButton>
       </section>
 
+      <section className="pain-solution section">
+        <div className="pain-solution-shell">
+          <div className="section-heading center">
+            <div className="kicker">Quando algo dentro de você pede atenção</div>
+            <h2>Talvez você não precise de mais respostas. <em>Precise de um espaço para compreender.</em></h2>
+            <p>Algumas coisas continuam pesando mesmo quando, por fora, parece que está tudo bem. A psicanálise pode abrir espaço para olhar com mais calma para aquilo que você sente, repete ou ainda não consegue nomear.</p>
+          </div>
+          <div className="pain-solution-grid">
+            <div className="pain-column">
+              <span className="pain-label">Você pode estar vivendo</span>
+              <div className="pain-item"><strong>“Minha mente não para.”</strong><p>Ansiedade, excesso de pensamentos e uma sensação constante de sobrecarga.</p></div>
+              <div className="pain-item"><strong>“Eu sei que algo mudou, mas não entendo o quê.”</strong><p>Fases de mudança, conflitos ou sentimentos difíceis de organizar.</p></div>
+              <div className="pain-item"><strong>“Eu repito situações que não queria repetir.”</strong><p>Padrões nas escolhas, relações e formas de lidar com o que acontece.</p></div>
+            </div>
+            <div className="solution-column">
+              <span className="solution-label">O espaço de análise</span>
+              <h3>Compreender o que está por trás do que você sente.</h3>
+              <p>Na escuta psicanalítica, você encontra um espaço reservado para falar sem precisar chegar com tudo organizado. Aos poucos, sua história pode ganhar novas perspectivas e sentidos.</p>
+              <div className="solution-points"><span><Check /> Escuta qualificada</span><span><Check /> Sem julgamentos</span><span><Check /> Respeito ao seu tempo</span></div>
+              <BookingButton>Agende sua sessão de psicanálise</BookingButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="atendimentos" className="services section">
         <div className="section-heading center">
           <div className="kicker">Áreas de cuidado</div>
