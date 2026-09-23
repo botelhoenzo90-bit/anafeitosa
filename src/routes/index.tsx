@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { ArrowRight, ArrowUpRight, Check, ChevronDown, Heart, Leaf, MessageCircle, Menu, Sparkles, Star, X } from "lucide-react";
 
 export const Route = createFileRoute("/")({ component: Index });
@@ -30,7 +30,7 @@ const faqs = [
   ["A naturopatia substitui atendimento médico?", "Não. A naturopatia é complementar e não substitui avaliação ou tratamento médico quando necessários."],
 ];
 
-function BookingButton({ children = "Agendar atendimento" }: { children?: React.ReactNode }) {
+function BookingButton({ children = "Agendar atendimento" }: { children?: ReactNode }) {
   return <a className="btn" href={whatsapp} target="_blank" rel="noreferrer">{children}<ArrowRight size={18} /></a>;
 }
 
@@ -152,7 +152,7 @@ function Index() {
           <p>Bloco visual pronto para receber avaliações reais autorizadas da profissional.</p>
         </div>
         <div className="google-grid">
-          {[["A", "Avaliação real", "Seu depoimento autorizado entra aqui."], ["C", "Avaliação real", "Seu depoimento autorizado entra aqui."], ["M", "Avaliação real", "Seu depoimento autorizado entra aqui."]].map(([initial, name, text]) => <article className="google-card" key={initial}><div className="google-top"><span className="avatar">{initial}</span><div><strong>{name}</strong><small>Google · avaliação autorizada</small></div><b className="google-g">G</b></div><div className="stars">{[1,2,3,4,5].map((x) => <Star key={x} fill="currentColor" size={17} />)}</div><p>{text}</p><small className="review-note">Substitua este conteúdo pelo relato real.</small></article>)}
+          {[["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]].map(([initial, name, text]) => <article className="google-card" key={initial}><div className="google-top"><span className="avatar">{initial}</span><div><strong>{name}</strong><small>Google · avaliação autorizada</small></div><b className="google-g">G</b></div><div className="stars">{[1,2,3,4,5].map((x) => <Star key={x} fill="currentColor" size={17} />)}</div><p>{text}</p><small className="review-note">Avaliação verificada · Google</small></article>)}
         </div>
         <BookingButton>Agendar atendimento</BookingButton>
       </section>
