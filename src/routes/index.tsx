@@ -121,7 +121,7 @@ function Index() {
         <div className="moments-grid">
           {moments.map(([title, desc], i) => <article className="moment-card" key={title}><span>0{i + 1}</span><h3>{title}</h3><p>{desc}</p></article>)}
         </div>
-        <BookingButton>Falar sobre meu momento</BookingButton>
+        <BookingButton>Agende sua sessão de psicanálise</BookingButton>
       </section>
 
       <section id="processo" className="process section">
@@ -164,7 +164,7 @@ function Index() {
             {[["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]].concat([["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]]).map(([initial, name, text], i) => <article className="google-card" key={i}><div className="google-top"><span className="avatar">{initial}</span><div><strong>{name}</strong></div></div><div className="stars">{[1,2,3,4,5].map((x) => <Star key={x} fill="currentColor" size={17} />)}</div><p>{text}</p></article>)}
           </div>
         </div>
-        <BookingButton>Agendar atendimento</BookingButton>
+        <BookingButton>Agende sua sessão de psicanálise</BookingButton>
       </section>
 
       <section id="faq" className="faq section">
