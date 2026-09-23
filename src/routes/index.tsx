@@ -96,10 +96,13 @@ function Index() {
       </section>
 
       <section id="sobre" className="about section">
+        <div className="about-image-wrap about-image-desktop">
+          <img src={anaFeitosaAsset.url} alt="Ana Feitosa, psicanalista, terapeuta e naturopata" />
+        </div>
         <div className="section-copy">
           <div className="kicker">Quem é Ana Feitosa</div>
           <h2>Cuidar da mente também é aprender a <em>se tratar com gentileza.</em></h2>
-          <div className="about-image-wrap">
+          <div className="about-image-wrap about-image-mobile">
             <img src={anaFeitosaAsset.url} alt="Ana Feitosa, psicanalista, terapeuta e naturopata" />
           </div>
           <p>Meu trabalho parte da escuta e do respeito pela história de cada pessoa. Não existe um roteiro pronto para aquilo que você vive.</p>
