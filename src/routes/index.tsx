@@ -42,7 +42,7 @@ function Index() {
     <main className="site">
       <section id="inicio" className="hero-clean">
         <div className="hero-content">
-          <div className="eyebrow"><span /> CUIDADO EMOCIONAL · ATENDIMENTO ONLINE</div>
+          <div className="hero-signature"><strong>ANA FEITOSA</strong><span>PSICANALISTA · TERAPEUTA · NATUROPATA</span></div><div className="eyebrow"><span /> CUIDADO EMOCIONAL · ATENDIMENTO ONLINE</div>
           <h1>Um espaço para você <em>se ouvir</em> com mais calma.</h1>
           <p>Psicanálise, terapia e naturopatia com uma abordagem acolhedora para adultos, adolescentes e casais.</p>
           <BookingButton>Agendar minha conversa</BookingButton>
@@ -72,7 +72,7 @@ function Index() {
           <h2>Cuidar da mente também é aprender a <em>se tratar com gentileza.</em></h2>
           <p>Meu trabalho parte da escuta e do respeito pela história de cada pessoa. Não existe um roteiro pronto para aquilo que você vive.</p>
           <p>Como <strong>psicanalista, terapeuta e naturopata</strong>, ofereço um espaço de acolhimento para adultos, adolescentes e casais, com atendimento online e olhar individualizado.</p>
-          <div className="check-list"><span><Check /> Escuta sem julgamentos</span><span><Check /> Atendimento individual</span><span><Check /> Adultos, adolescentes e casais</span><span><Check /> Formato online</span></div>
+          <div className="check-list clean-checks"><span><Check /> <b>Escuta sem julgamentos</b></span><span><Check /> <b>Atendimento individual</b></span><span><Check /> <b>Adultos, adolescentes e casais</b></span><span><Check /> <b>Formato online</b></span></div>
           <BookingButton>Agendar atendimento</BookingButton>
         </div>
       </section>
@@ -89,8 +89,7 @@ function Index() {
               <div className="card-number">{number}</div><div className="service-icon"><Sparkles size={25} /></div><h3>{title}</h3><p>{desc}</p>
             </article>)}
           </div>
-        </div>
-        <BookingButton>Quero saber qual atendimento combina comigo</BookingButton>
+        </div><div className="services-cta"><BookingButton>Quero saber qual atendimento combina comigo</BookingButton></div>
       </section>
 
       <section className="moments section">
@@ -118,7 +117,7 @@ function Index() {
               ["02", "Primeira conversa", "Abrimos espaço para entender seu momento, suas dúvidas e o que você precisa."],
               ["03", "Caminho personalizado", "Acompanhamento pensado para sua história, rotina e objetivos."],
               ["04", "Continuidade", "Um espaço de escuta para perceber mudanças e construir novos caminhos."]
-            ].map(([n, title, desc]) => <article className="process-card" key={n}><span>{n}</span><div><h3>{title}</h3><p>{desc}</p></div></article>)}
+            ].map(([n, title, desc]) => <article className="process-card" key={n}><span className="process-number">{n}</span><div><h3>{title}</h3><p>{desc}</p></div></article>)}
           </div>
           <BookingButton>Agendar primeira conversa</BookingButton>
         </div>
@@ -136,12 +135,14 @@ function Index() {
 
       <section className="reviews section">
         <div className="section-heading center">
-          <div className="kicker">Avaliações</div>
-          <h2>Depoimentos de quem encontrou um espaço para <em>se cuidar.</em></h2>
-          <p>Uma apresentação leve para receber depoimentos reais e autorizados.</p>
+          <div className="kicker">Depoimentos</div>
+          <h2>Um espaço para se sentir <em>acolhido.</em></h2>
+          <p>Depoimentos apresentados em um carrossel contínuo.</p>
         </div>
-        <div className="google-grid">
-          {[["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]].map(([initial, name, text]) => <article className="google-card" key={initial}><div className="google-top"><span className="avatar">{initial}</span><div><strong>{name}</strong><small>Depoimento autorizado</small></div></div><div className="stars">{[1,2,3,4,5].map((x) => <Star key={x} fill="currentColor" size={17} />)}</div><p>{text}</p><small className="review-note">Depoimento autorizado</small></article>)}
+        <div className="reviews-marquee">
+          <div className="reviews-track">
+            {[["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]].concat([["M", "Mariana S.", "A Ana me acolheu desde a primeira conversa. Foi muito importante ter um espaço seguro para falar e me compreender melhor."], ["C", "Camila R.", "O atendimento é muito cuidadoso e a conversa inicial me deixou muito à vontade. Recomendo para quem busca se conhecer melhor."], ["A", "Amanda P.", "Tenho gostado muito do processo. A escuta é atenta, humana e respeitosa com o meu momento."]]).map(([initial, name, text], i) => <article className="google-card" key={i}><div className="google-top"><span className="avatar">{initial}</span><div><strong>{name}</strong><small>Depoimento autorizado</small></div></div><div className="stars">{[1,2,3,4,5].map((x) => <Star key={x} fill="currentColor" size={17} />)}</div><p>{text}</p><small className="review-note">Depoimento autorizado</small></article>)}
+          </div>
         </div>
         <BookingButton>Agendar atendimento</BookingButton>
       </section>
