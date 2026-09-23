@@ -66,17 +66,6 @@ function Index() {
         </div>
       </section>
 
-      <section id="sobre" className="about section">
-        <div className="section-copy">
-          <div className="kicker">Quem é Ana Feitosa</div>
-          <h2>Cuidar da mente também é aprender a <em>se tratar com gentileza.</em></h2>
-          <p>Meu trabalho parte da escuta e do respeito pela história de cada pessoa. Não existe um roteiro pronto para aquilo que você vive.</p>
-          <p>Como <strong>psicanalista, terapeuta e naturopata</strong>, ofereço um espaço de acolhimento para adultos, adolescentes e casais, com atendimento online e olhar individualizado.</p>
-          <div className="check-list clean-checks"><span><Check /> <b>Escuta sem julgamentos</b></span><span><Check /> <b>Atendimento individual</b></span><span><Check /> <b>Adultos, adolescentes e casais</b></span><span><Check /> <b>Formato online</b></span></div>
-          <BookingButton>Agendar atendimento</BookingButton>
-        </div>
-      </section>
-
       <section id="atendimentos" className="services section">
         <div className="section-heading center">
           <div className="kicker">Áreas de cuidado</div>
@@ -90,6 +79,17 @@ function Index() {
             </article>)}
           </div>
         </div><div className="services-cta"><BookingButton>Quero saber qual atendimento combina comigo</BookingButton></div>
+      </section>
+
+      <section id="sobre" className="about section">
+        <div className="section-copy">
+          <div className="kicker">Quem é Ana Feitosa</div>
+          <h2>Cuidar da mente também é aprender a <em>se tratar com gentileza.</em></h2>
+          <p>Meu trabalho parte da escuta e do respeito pela história de cada pessoa. Não existe um roteiro pronto para aquilo que você vive.</p>
+          <p>Como <strong>psicanalista, terapeuta e naturopata</strong>, ofereço um espaço de acolhimento para adultos, adolescentes e casais, com atendimento online e olhar individualizado.</p>
+          <div className="check-list clean-checks"><span><Check /> <b>Escuta sem julgamentos</b></span><span><Check /> <b>Atendimento individual</b></span><span><Check /> <b>Adultos, adolescentes e casais</b></span><span><Check /> <b>Formato online</b></span></div>
+          <BookingButton>Agendar atendimento</BookingButton>
+        </div>
       </section>
 
       <section className="moments section">
