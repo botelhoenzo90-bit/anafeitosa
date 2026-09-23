@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 import { ArrowRight, ArrowUpRight, Check, ChevronDown, Heart, Sparkles, Star } from "lucide-react";
 import anaFeitosaAsset from "@/assets/ana-feitosa.png.asset.json";
+import atendimentoOnlineAsset from "@/assets/atendimento-online.png.asset.json";
 import whatsappAsset from "@/assets/whatsapp.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -185,9 +186,15 @@ function Index() {
         <div className="online-copy section-copy">
           <div className="kicker">Atendimento online</div>
           <h2>Seu cuidado pode acontecer de onde <em>você estiver.</em></h2>
+          <div className="online-image-wrap online-image-mobile">
+            <img src={atendimentoOnlineAsset.url} alt="Sessão de terapia realizada por videochamada" />
+          </div>
           <p>Tenha um espaço reservado na sua rotina para olhar para si, sem precisar se deslocar. Escolha um lugar tranquilo e esteja presente para o seu processo.</p>
           <div className="online-points"><span><Check /> Mais praticidade</span><span><Check /> Horário combinado</span><span><Check /> Ambiente reservado</span></div>
           <BookingButton>Agende sua sessão</BookingButton>
+        </div>
+        <div className="online-image-wrap online-image-desktop">
+          <img src={atendimentoOnlineAsset.url} alt="Sessão de terapia realizada por videochamada" />
         </div>
       </section>
 
