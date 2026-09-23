@@ -83,24 +83,37 @@ function Index() {
       <section className="pain-solution section">
         <div className="pain-solution-shell">
           <div className="section-heading center">
-            <div className="kicker">Quando algo dentro de você pede atenção</div>
-            <h2>Talvez você não precise de mais respostas. <em>Precise de um espaço para compreender.</em></h2>
-            <p>Algumas coisas continuam pesando mesmo quando, por fora, parece que está tudo bem. A psicanálise pode abrir espaço para olhar com mais calma para aquilo que você sente, repete ou ainda não consegue nomear.</p>
+            <div className="kicker">Talvez você esteja vivendo isso</div>
+            <h2>Quando algo pesa por dentro, <em>não precisa carregar sozinho.</em></h2>
+            <p>Reconhecer o que você está sentindo pode ser o primeiro passo para começar a cuidar de si.</p>
           </div>
-          <div className="pain-solution-grid">
-            <div className="pain-column">
-              <span className="pain-label">Você pode estar vivendo</span>
-              <div className="pain-item"><strong>“Minha mente não para.”</strong><p>Ansiedade, excesso de pensamentos e uma sensação constante de sobrecarga.</p></div>
-              <div className="pain-item"><strong>“Eu sei que algo mudou, mas não entendo o quê.”</strong><p>Fases de mudança, conflitos ou sentimentos difíceis de organizar.</p></div>
-              <div className="pain-item"><strong>“Eu repito situações que não queria repetir.”</strong><p>Padrões nas escolhas, relações e formas de lidar com o que acontece.</p></div>
+          <div className="pain-simple-grid">
+            <div className="pain-simple-card">
+              <div className="pain-simple-title"><span>Você sente</span></div>
+              <ul>
+                <li>Ansiedade, preocupação ou pensamentos acelerados</li>
+                <li>Cansaço emocional e sensação de sobrecarga</li>
+                <li>Dificuldade para entender ou expressar o que sente</li>
+                <li>Conflitos nos relacionamentos ou dificuldade de se posicionar</li>
+                <li>Insatisfação, insegurança ou sensação de estar perdido</li>
+                <li>Padrões que se repetem mesmo quando você quer mudar</li>
+              </ul>
             </div>
-            <div className="solution-column">
-              <span className="solution-label">O espaço de análise</span>
-              <h3>Compreender o que está por trás do que você sente.</h3>
-              <p>Na escuta psicanalítica, você encontra um espaço reservado para falar sem precisar chegar com tudo organizado. Aos poucos, sua história pode ganhar novas perspectivas e sentidos.</p>
-              <div className="solution-points"><span><Check /> Escuta qualificada</span><span><Check /> Sem julgamentos</span><span><Check /> Respeito ao seu tempo</span></div>
-              <BookingButton>Agende sua sessão de psicanálise</BookingButton>
+            <div className="pain-simple-card solution-simple-card">
+              <div className="pain-simple-title"><span>Na análise, você encontra</span></div>
+              <ul>
+                <li>Um espaço seguro para falar sem julgamentos</li>
+                <li>Escuta qualificada para compreender sua história</li>
+                <li>Tempo para olhar para sentimentos e conflitos com mais calma</li>
+                <li>Possibilidade de reconhecer padrões e novos sentidos</li>
+                <li>Respeito ao seu ritmo e à sua singularidade</li>
+                <li>Um acompanhamento construído a partir do que você vive</li>
+              </ul>
             </div>
+          </div>
+          <div className="pain-solution-cta">
+            <p>Você não precisa saber exatamente por onde começar.</p>
+            <BookingButton>Agende sua sessão de psicanálise</BookingButton>
           </div>
         </div>
       </section>
