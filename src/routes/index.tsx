@@ -1,8 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import { ArrowRight, ArrowUpRight, Check, ChevronDown, Heart, Leaf, MessageCircle, Menu, Sparkles, Star, X } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check, ChevronDown, Heart, Sparkles, Star } from "lucide-react";
+import anaFeitosaAsset from "@/assets/ana-feitosa.png.asset.json";
+import whatsappAsset from "@/assets/whatsapp.png.asset.json";
 
-export const Route = createFileRoute("/")({ component: Index });
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Ana Feitosa | Psicanalista, Terapeuta e Naturopata" },
+      { name: "description", content: "Atendimento online com Ana Feitosa: psicanálise, terapia e naturopatia para adultos, adolescentes e casais." },
+      { property: "og:title", content: "Ana Feitosa | Psicanalista, Terapeuta e Naturopata" },
+      { property: "og:description", content: "Um espaço acolhedor de escuta e cuidado emocional, com atendimento online." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
+  component: Index,
+});
 
 const whatsapp = "https://wa.me/5524993272763?text=Ol%C3%A1%20Ana%2C%20gostaria%20de%20agendar%20uma%20conversa.";
 
@@ -82,6 +96,9 @@ function Index() {
       </section>
 
       <section id="sobre" className="about section">
+        <div className="about-image-wrap">
+          <img src={anaFeitosaAsset.url} alt="Ana Feitosa, psicanalista, terapeuta e naturopata" />
+        </div>
         <div className="section-copy">
           <div className="kicker">Quem é Ana Feitosa</div>
           <h2>Cuidar da mente também é aprender a <em>se tratar com gentileza.</em></h2>
@@ -162,7 +179,7 @@ function Index() {
         <div className="footer-contact"><strong>Agendamentos</strong><a href={whatsapp} target="_blank" rel="noreferrer">+55 24 99327-2763</a><a className="footer-cta" href={whatsapp} target="_blank" rel="noreferrer">Agendar agora <ArrowUpRight size={15} /></a></div>
         <div className="footer-bottom">© {new Date().getFullYear()} Ana Feitosa · Atendimento online</div>
       </footer>
-      <a className="floating-whatsapp" href={whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp"><MessageCircle size={25} /></a>
+      <a className="floating-whatsapp" href={whatsapp} target="_blank" rel="noreferrer" aria-label="Conversar com Ana pelo WhatsApp"><img src={whatsappAsset.url} alt="" /></a>
     </main>
   );
 }
