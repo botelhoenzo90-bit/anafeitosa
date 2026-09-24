@@ -14,8 +14,12 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Ana Feitosa | Psicanalista, Terapeuta e Naturopata" },
       { property: "og:description", content: "Um espaço acolhedor de escuta e cuidado emocional, com atendimento online." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://anafeitosa.lovable.app/" },
+      { property: "og:image", content: "https://anafeitosa.lovable.app/__l5e/assets-v1/cf7088b8-f35c-454e-b115-5bf6070c9a86/ana-feitosa-compartilhamento.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://anafeitosa.lovable.app/__l5e/assets-v1/cf7088b8-f35c-454e-b115-5bf6070c9a86/ana-feitosa-compartilhamento.jpg" },
     ],
+    links: [{ rel: "canonical", href: "https://anafeitosa.lovable.app/" }],
   }),
   component: Index,
 });
