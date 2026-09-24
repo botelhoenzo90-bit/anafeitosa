@@ -3,6 +3,7 @@ import { useState, type ReactNode } from "react";
 import { ArrowRight, ArrowUpRight, Check, ChevronDown, Heart, Sparkles, Star } from "lucide-react";
 import anaFeitosaAsset from "@/assets/ana-feitosa.png.asset.json";
 import atendimentoOnlineAsset from "@/assets/atendimento-online.png.asset.json";
+import logoAnaFeitosaAsset from "@/assets/logo-ana-feitosa.png.asset.json";
 import whatsappAsset from "@/assets/whatsapp.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -57,7 +58,8 @@ function Index() {
     <main className="site">
       <section id="inicio" className="hero-clean">
         <div className="hero-content">
-          <div className="hero-signature"><strong>ANA FEITOSA</strong><span>PSICANALISTA · TERAPEUTA · NATUROPATA</span></div><div className="eyebrow"><span /> CUIDADO EMOCIONAL · ATENDIMENTO ONLINE</div>
+          <img className="hero-logo" src={logoAnaFeitosaAsset.url} alt="Ana Feitosa — Psicanalista, Terapeuta e Naturopata" />
+          <div className="eyebrow"><span /> CUIDADO EMOCIONAL · ATENDIMENTO ONLINE</div>
           <h1>Um espaço para você <em>se ouvir</em> com mais calma.</h1>
           <p>Psicanálise, terapia e naturopatia com uma abordagem acolhedora para adultos, adolescentes e casais.</p>
           <BookingButton>Agende sua sessão de psicanálise</BookingButton>
