@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep each editorial service section in the homepage route and its visual rules in global CSS, so content remains navigable in the existing single-page experience.
