@@ -3,6 +3,7 @@ import { useState, type ReactNode } from "react";
 import { ArrowRight, ArrowUpRight, Check, ChevronDown, Heart, Sparkles, Star } from "lucide-react";
 import anaFeitosaAsset from "@/assets/ana-feitosa.png.asset.json";
 import atendimentoOnlineAsset from "@/assets/atendimento-online.png.asset.json";
+import anaNaturopataAsset from "@/assets/ana-naturopata.png.asset.json";
 import logoAnaFeitosaAsset from "@/assets/logo-ana-feitosa.png.asset.json";
 import whatsappAsset from "@/assets/whatsapp.png.asset.json";
 
@@ -154,6 +155,25 @@ function Index() {
           <p>Como <strong>psicanalista, terapeuta e naturopata</strong>, ofereço um espaço de acolhimento para adultos, adolescentes e casais, com atendimento online e olhar individualizado — respeitando o tempo psíquico de cada pessoa.</p>
           <div className="check-list clean-checks"><span><Check /> <b>Escuta sem julgamentos</b></span><span><Check /> <b>Escuta qualificada</b></span><span><Check /> <b>Respeito ao tempo de cada história</b></span><span><Check /> <b>Atendimento online</b></span></div>
           <BookingButton>Agende sua sessão</BookingButton>
+        </div>
+      </section>
+
+      <section id="naturopatia" className="naturopathy section" aria-labelledby="naturopathy-title">
+        <div className="naturopathy-inner">
+          <div className="naturopathy-image">
+            <img src={anaNaturopataAsset.url} alt="Ana Feitosa de jaleco, terapeuta naturopata" loading="lazy" />
+          </div>
+          <div className="naturopathy-copy section-copy">
+            <div className="kicker">Cuidado integral</div>
+            <h2 id="naturopathy-title">Terapia naturopata: um olhar para <em>você por inteiro.</em></h2>
+            <p>A naturopatia considera a pessoa em sua rotina, seus hábitos e seu bem-estar. É uma forma de cuidado complementar que busca entender o que faz sentido para a sua vida, sem receitas prontas.</p>
+            <div className="naturopathy-how">
+              <h3>Como funciona?</h3>
+              <p>O primeiro passo é uma conversa para conhecer sua história, suas necessidades e o que você deseja cuidar. A partir daí, Ana pode propor orientações de autocuidado e hábitos, construídas com você e respeitando o seu ritmo.</p>
+            </div>
+            <p className="naturopathy-note">A naturopatia não substitui avaliação, diagnóstico ou tratamento médico.</p>
+            <BookingButton>Conversar sobre naturopatia</BookingButton>
+          </div>
         </div>
       </section>
 
