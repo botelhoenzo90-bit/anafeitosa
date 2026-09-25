@@ -171,7 +171,6 @@ function Index() {
               <h3>Como funciona?</h3>
               <p>O primeiro passo é uma conversa para conhecer sua história, suas necessidades e o que você deseja cuidar. A partir daí, Ana pode propor orientações de autocuidado e hábitos, construídas com você e respeitando o seu ritmo.</p>
             </div>
-            <p className="naturopathy-note">A naturopatia não substitui avaliação, diagnóstico ou tratamento médico.</p>
             <BookingButton>Conversar sobre naturopatia</BookingButton>
           </div>
         </div>
