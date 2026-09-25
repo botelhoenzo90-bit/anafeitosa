@@ -161,7 +161,7 @@ function Index() {
       <section id="naturopatia" className="naturopathy section" aria-labelledby="naturopathy-title">
         <div className="naturopathy-inner">
           <div className="naturopathy-image">
-            <img src={anaNaturopataAsset.url} alt="Ana Feitosa de jaleco, terapeuta naturopata" loading="lazy" />
+            <img src={anaNaturopataAsset.url} alt="Ana Feitosa de jaleco, terapeuta naturopata" />
           </div>
           <div className="naturopathy-copy section-copy">
             <div className="kicker">Cuidado integral</div>
